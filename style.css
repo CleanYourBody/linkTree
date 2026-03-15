@@ -1,0 +1,133 @@
+/* Importar fuentes elegantes similares a las de la imagen */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: #fff;
+}
+
+/* --- Fondo de Acuarela --- */
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.blob {
+    position: absolute;
+    filter: blur(100px);
+    opacity: 0.8;
+    border-radius: 50%;
+}
+
+.light-blue { width: 300px; height: 300px; background: #08565f; top: -50px; left: -50px; }
+.pink { width: 400px; height: 400px; background: #aa4663; top: 10%; right: -100px; }
+.green { width: 250px; height: 250px; background: #1a2904; bottom: -50px; left: -20px; }
+
+/* --- Contenedor Principal --- */
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.logo-box {
+    background: #fff;
+    border: 8px solid #4a2c4a; /* Color uva oscuro */
+    border-radius: 50px;
+    padding: 0px;
+    display: inline-block;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.logo-img {
+    max-width: 180px;
+    height: auto;
+    display: block;
+}
+
+.subtitle {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* --- Botones --- */
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn-social {
+    background-color: #512e4d; /* Color ciruela oscuro */
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    transition: transform 0.3s, background-color 0.3s;
+    font-size: 1.1rem;
+}
+
+.btn-social:hover {
+    background-color: #3a2137;
+    transform: scale(1.03);
+}
+
+.btn-social i {
+    font-size: 1.5rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 5px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --- Footer --- */
+.footer-text {
+    margin-top: 40px;
+}
+
+.slogan {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: #333;
+}
+
+.brand-name {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    color: #444;
+}
+
+/* --- Responsividad --- */
+@media (max-width: 600px) {
+    .logo-img { max-width: 140px; }
+    .subtitle { font-size: 1.2rem; }
+    .slogan { font-size: 1.7rem; }
+}
